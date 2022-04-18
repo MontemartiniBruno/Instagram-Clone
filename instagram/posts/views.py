@@ -33,7 +33,7 @@ posts = [
 ]
 
 def newpost(request):
-    return render(request,'feed.html')
+    return render(request,'feed.html', {'post': posts})
 
 def welcome(request):
     return render(request,'welcome.html')
