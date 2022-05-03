@@ -9,7 +9,7 @@ class Profile(models.Model):
 
     website = models.URLField(max_length=200, blank=True)
     biography = models.TextField(max_length=500, blank=True)
-    phone_numer = models.CharField(max_length=15, blank=True)
+    phone_number = models.CharField(max_length=15, blank=True)
 
     picture = models.ImageField(upload_to = 'users/pictures', blank=True, null=True)
 
@@ -17,3 +17,4 @@ class Profile(models.Model):
     
     def __str__(self):
         return self.user.username
+
